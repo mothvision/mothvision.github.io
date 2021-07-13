@@ -1,81 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quem é Tameus?</title>
+        <title>Tameus.</title>
+        <link rel="shortcut icon" type="image/jpg" href="images/minha_logo_2.0.webp"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/251e343edc.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <table cellspacing="30">
-            <tr>
-                <td><img src="https://cdnb.artstation.com/p/users/avatars/002/803/617/large/82d81176bdc4647832c9dd1590674a51.jpg?1617843625" alt="sou eu poxa."></td>
-                <td><h1>Tameus sou eu.</h1>
-                    <h3>Designer Gráfico, Artista 3D e Estudante de programação</h3></td>
-            </tr>
-        </table>
-        <hr size="5">
-        <h4>Conheça mais:</h4>
-        <ul>
-            <li><a href="https://www.behance.net/feitoporferreirama">Trabalhos de Design.</a></li>
-            <li><a href="https://www.artstation.com/mateusma">Trabalhos em 3D.</a></li>
-            <li>Sites.</li>
-        </ul>
-        <h4>Ideias:</h4>
-        <ol>
-            <li>Visões.</li>
-            <li>Objetivos.</li>
-            <li>Espaços.</li>
-        </ol>
-        <ol>
-            <li>unana</li>
-            <ul>
-                <LI>UNHA</LI>
-                <li>dedo</li>
-                <li>mão</li>
-                    <ol>
-                        <li>bolodoido.</li>
-                        <li>op.</li>
-                    </ol>
-            </ul>
-        </ol>
-        <table cellspacing="10">
-            <thead>
-                <tr>
-                    <td>Onde?</td>
-                </tr>
-            </thead>
-            <tbody></tbody>
-            <tr>
-                <td>ali</td>
-                <td>aqui</td>
-                <td>lá</td>
-            </tr>
-            <tr>
-                <td>ali</td>
-                <td>aqui</td>
-                <td>lá</td>
-            </tr>
-        </tbody>
-        </table>
-        <h3>Habilidades:</h3>
-        <table cellspacing="10">
-            <tr>
-                <td>Photoshop</td>
-                <td>🤖🤖🤖🤖</td>
-                <td>Blender</td>
-                <td>🤖🤖🤖</td>
-            </tr>
-            <tr>
-                <td>Illustrator</td>
-                <td>🤖🤖🤖</td>
-                <td>Indesign</td>
-                <td>🤖🤖</td>
-            </tr>
-        </table>
-        <a href="contato.html">Fale comigo.</a>
+    <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/minha_logo_2.0.webp" alt="Este sou eu"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#designgrafico">Design</a></li>
+                        <li><a href="#3d">3D</a></li>
+                        <li><a href="#sobremim">Sobre</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-ellipsis-h" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>ATENTO AO QUE SOU E VEJO</h1>
+            <p>Estudo comunicação visual como forma de enxergar aquilo que ainda não vi.</p>
+            <a href="portfolio.html" class="btn-portfolio" target="_blank">VEJA COMO EU VEJO</a>
+        </div>
+    </section>
+    <canvas class="zdog-canvas2" width="500" height="350"></canvas>
+    <!------- Design --------->
+    <section class="design">
+        <h1 id="designgrafico">Design Gráfico</h1>
+        <p>Símbolos materiais.</p>
+        <div class="row">
+            <div class="design-col">
+                <a href="formas.html" target="_blank">
+                <h3> formas. </h3>
+                <p>no kantismo, cada uma das leis e estruturas inerentes ao espírito humano que possibilitam o ordenamento apriorístico do material múltiplo e caótico oferecido pelas sensações, viabilizando dessa maneira a compreensão da realidade.</p>
+                </a>
+            </div>
+            <div class="design-col">
+                <a href="cores.html" target="_blank">
+                <h3> cores.</h3>
+                <p>propriedade de quarks e glúons que, na cromodinâmica quântica, tem um papel análogo ao da carga elétrica - enquanto a carga elétrica existe em dois estados, positivo e negativo, a cor apresenta três possibilidades designadas como vermelho, verde e azul.</p>
+                </a>
+            </div>
+            <div class="design-col">
+                <a href="tipografia.html" target="_blank">
+                <h3> tipografia. </h3>
+                <p>conjunto de procedimentos artísticos e técnicos que abrangem as diversas etapas da produção gráfica (desde a criação dos caracteres até a impressão e acabamento), esp. no sistema de impressão direta com o uso de matriz em relevo; imprensa.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!------3D------->
+    <section class="tresd">
+    <h1 id="3d">3D</h1>
+    <p>Perspectivas.</p>
+        <div class="row">
+            <div class="tresd-col">
+                <img src="images/tenis.webp">
+                <div class="layer">
+                    <h3><a href="https://www.artstation.com/artwork/Kr0PQr" rel="nofollow" target="_blank">tamota. shoes.</a></h3>
+                </div>
+            <div class="tresd-col">
+                <img src="images/quarto.webp">
+                <div class="layer">
+                    <h3><a href="https://www.artstation.com/artwork/681Q15" rel="nofollow" target="_blank">quarto.</a></h3>
+                </div>
+            <div class="tresd-col">
+                <img src="images/envil.webp">
+                <div class="layer">
+                        <h3><a href="https://www.artstation.com/artwork/oAeqNk" rel="nofollow" target="_blank">envil.</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----Sobre---->
+    <section class="sobre">
+        <h1 id="sobremim">Sobre</h1>
+        <p>Eu.</p>
+
+        <div class="row">
+            <div class="sobre-col">
+                <img src="images/eu.webp">
+            </div>
+            <div class="sobre-col">
+                <h3>Atualmente curso Design Gráfico na ESAMC - enquanto isso, estudo 3D e Web Design.
+                        Mesmo que introvertido, sou apaixonado pela comunicação visual e verbal - assim como um admirador assíduo de filosofia.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-----footer----->
+    <section class="footer">
+        <h4>Saiba mais e entre em contato.</h4>
+        <div class="icons">
+            <a class="fab fa-artstation fa-3x" href="https://www.artstation.com/mateusma" rel="nofollow" target="_blank" ></a>
+            <a class="fa fa-behance fa-3x"  href="https://www.behance.net/feitoporferreirama" rel="nofollow" target="_blank"></a>
+            <a class="fas fa-umbrella fa-3x" href="https://www.windy.com/-22.910/-47.060?-22.981,-47.060,11,m:c0YaeQJ" rel="nofollow" target="_blank"></a>
+            <a class="fas fa-envelope fa-3x" href="mailto:ferreiramateusart@gmail.com" target="_blank"></a>
+            <a class="fab fa-whatsapp fa-3x" href="https://wa.me/5519981672348" rel="nofollow" target="_blank"></a>
+            <a class="fab fa-codepen fa-3x" href="https://codepen.io/mothvision" rel="nofollow" target="_blank"></a>
+        <h5>feito com carinho por:</h5>
+            <a href="webdesign.html" target="_blank"><img src="images/ao.webp" alt="tameuswebdesign"></a>
+        <h6><i>também conhecido como eu mesmo</i></h6>
+        </div>
+    </section>
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <script src="./script2.js"></script> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+
+        }
+    </script>
     </body>
 </html>
